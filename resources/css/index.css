@@ -10,6 +10,7 @@ html {
 
 body {
     margin: 0;
+    background-color: #5a6e96;
 }
 
 /*General*/
@@ -21,6 +22,9 @@ body {
 
 /*HEADER*/
 header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
     height: 6.5rem;
     padding: 0px 1.5rem;
     font-weight: bold;
@@ -64,14 +68,16 @@ header {
 
 /*MAIN*/
 main {
-    height: 90vh;
-    background-color: #5a6e96;
+    position: relative;
+    top: 6.5rem;
     display: flex; 
 }
 
 /*Hero Section*/
 #hero {
+    position: fixed;
     width: 40%;
+    height: 100%;
     padding-top: 1rem;
     display: grid;
     grid-template: repeat(20, 5%) / repeat(20, 5%);
@@ -104,6 +110,8 @@ main {
 
 /*Information Section*/
 #information {
+    position: relative;
+    left: 40%;
     width: 60%;
 }
 
@@ -124,11 +132,23 @@ main {
 
 /*Education Div*/
 #education {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: none;
 }
-.education-container  {
+
+
+/*Experience Div*/
+#experience {
+    display: none;
+}
+
+
+/*Container style*/
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container  {
     width: 70%;
     padding: 1rem 0;
     display: flex;
@@ -174,7 +194,3 @@ main {
 
 
 
-/*Experience Div*/
-#experience {
-    display: none;
-}
