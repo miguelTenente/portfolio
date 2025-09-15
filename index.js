@@ -1,48 +1,57 @@
-/*let aux = document.getElementById('about');
+//FUNCTIONS
 
-let aux2 = aux.getElementsByTagName('ul')[0];
-
-let aux3 = document.createElement('li');
-aux3.innerHTML = "<strong>Cona</strong>";
-
-document.getElementById('about').getElementsByTagName('ul')[0].appendChild(aux3);
-
-let aux4 = document.getElementById('about').getElementsByTagName('li')[2]
-
-document.aux2.removeChild(aux4)
-
-let aux = document.getElementById('information').getElementsByTagName('div');
-aux[1].innerHTML = "<p>Coisas top</p>"*/
-
+//Clear the #information section (MainScreen)
 function clearMainScreen () {
     for (const element of infoList) {
         element.style.display = 'none';
     }
 }
 
+//Makes the letters of the elements from the #list thinner
 function thinList () {
     for (const element of list) {
         element.style.fontWeight = 'normal';
     }
 }
 
-function listManager (pos) {
+//Manage what to show in the #information and respective list representetive
+function mainScreenManager (pos) {
     clearMainScreen();
     thinList();
-    infoList[pos+1].style.display = 'block';
-    list[pos].style.fontWeight = 'bolder';
+    if (pos < 5) {
+        list[pos].style.fontWeight = 'bolder';
+    }
+    infoList[pos].style.display = 'block';
 }
 
-let infoList = [document.getElementById('home'),
-                document.getElementById('about'),
+//Listener of what to show in the #information (MainScren)
+function mainScreenListener () {
+    for (let i = 0; i < 5; i++) {
+        list[i].onclick = function() {mainScreenManager(i)};
+    }
+
+    icon.onclick = function() {mainScreenManager(5)}
+}
+
+
+
+//VARIABELS
+
+//Array of the elements that can appear on the #information section (MainScreen) 
+let infoList = [document.getElementById('about'),
                 document.getElementById('education'),
                 document.getElementById('experience'),
                 document.getElementById('projects'),
-                document.getElementById('contact')];
+                document.getElementById('contact'),
+                document.getElementById('home')];
 
+//Having acess to the array of the li from #list                
 let list = document.getElementById('list').getElementsByTagName('a');
 
+//Icon from the webpage
+let icon = document.getElementById('header_icons').getElementsByTagName('a')[0];
 
-for (let i = 0; i < 5; i++) {
-    list[i].onclick = function() {listManager(i);};
-}
+
+
+//ACTIONS FROM THE USER
+mainScreenListener();
