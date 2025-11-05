@@ -18,7 +18,7 @@ function thinList () {
 function mainScreenManager (pos) {
     clearMainScreen();
     thinList();
-    if (pos < 5) {
+    if (pos < infoList.length - 1) {
         list[pos].style.fontWeight = 'bolder';
     }
     infoList[pos].style.display = 'block';
@@ -26,11 +26,11 @@ function mainScreenManager (pos) {
 
 //Listener of what to show in the #information (MainScren)
 function mainScreenListener () {
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < infoList.length - 1; i++) {
         list[i].onclick = function() {mainScreenManager(i)};
     }
 
-    icon.onclick = function() {mainScreenManager(5)}
+    icon.onclick = function() {mainScreenManager(infoList.length - 1)};
 }
 
 
@@ -41,7 +41,8 @@ function mainScreenListener () {
 let infoList = [document.getElementById('about'),
                 document.getElementById('education'),
                 document.getElementById('experience'),
-                document.getElementById('projects'),
+                document.getElementById('software_projects'),
+                document.getElementById('automation_projects'),
                 document.getElementById('contact'),
                 document.getElementById('home')];
 
