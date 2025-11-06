@@ -7,4 +7,4 @@ LISTA DAS COISAS QUE FALTAM:
 -Fazer as caixinhas do contact me;
 -Adicionar algum icon;
 -Pedir ajuda á Valeira para saber o que dá para melhorar no disign das coisas;
--Encontrar um sitio onde colocar online a webpage.
+-Fazer scroll direto na zona da informação e passar diretamente de pagina para pagina;
