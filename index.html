@@ -4,105 +4,106 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portefolio do Tenente</title>
+        <title>MTenente</title>
         <link rel="stylesheet" href="./resources/css/index.css">
         <script src="https://kit.fontawesome.com/dd8cd0352a.js" crossorigin="anonymous"></script>
     </head>
 
-    <body>
+    <body class="background_color">
         <header>
-            <div id="header_icons">
-                <a href="#">Icon</a>
-                <p><a href="./resources/documents/CV_Miguel Tenente.pdf" target="_blank">Download CV</a></p>
+            <div>
+                <a href="#hero" class="icons">home</a>
             </div>
-            <div id="header_contact">
-                <a href="https://www.linkedin.com/in/miguel-tenente-a485571ba/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/miguelTenente" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <div>
+                <button id="menu_button" class="icons"><i class="fa-solid fa-list"></i></button>
+                <nav id="menu">
+                    <ul class="li_no_style">
+                        <li><a href="#about">About Me</a></li>                 
+                        <li><a href="#experience">Experience</a></li>               
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
         <main>
-            <section id="hero">
-                <div id="iam">
-                    <h1 style="margin: 0;">I am</h1>
-                    <img src="./resources/images/arrow_down.png" alt="arrow_down" class="adjust_img">
+            <section id="hero" class="slide">
+                <h1>Miguel Tenente</h1>
+                <h2>Software Engineer & Automation Engineer</h2>
+                <h3>I am passionate about creating automation and software solutions that make everyday life easier.</h3>
+            </section>
+
+            <section id="about" class="slide">
+                <h3 class="slide_title"><span class="background_color"> About Me </span></h3>
+
+                <div id="about_info">
+                    <div>
+                        <img src="./resources/images/cara.png" class="adjust_img">
+                    </div>
+                    <div>
+                        <p> 
+                            I graduated from the Faculty of Engineering at the University of Porto. 
+                            I have completed the Integrated Master's program in Electrical and Computer 
+                            Engineering. Within the course, I followed the branch of Automation and I 
+                            specialized in Robotics and Systems Automation. <br><br>
+
+                            Throughout my academic journey, I had the opportunity to undertake several 
+                            projects that allowed me to develop my software and hardware skills, which 
+                            are detailed in the projects section of my LinkedIn profile. These experiences 
+                            enriched my technical skills in various programming languages such as C, C++, 
+                            Python, Java, SQL, MATLAB, Grafcet, and Simulink. Additionally, I am also 
+                            familiar with Autodesk Fusion 360 for 3D design and circuit development. <br><br>
+                            
+                            In terms of my extracurricular activities, my journey began as a scout at the 
+                            age of six. There, I developed essential soft skills such as teamwork, 
+                            communication, adaptability, and problem-solving. In addition, working as a 
+                            children's activities coordinator has given me the opportunity to develop my 
+                            leadership and organisational skills, enabling me to adapt to different 
+                            situations.
+                        </p>
+
+                        <div>
+                            <ul class="li_no_style">
+                                <li><strong>Birthday: </strong>8 June 1998</li>
+                                <li><strong>Email: </strong>mtenente43@gmail.com</li>
+                                <li><strong>Phone: </strong>+351 910 786 710</li>
+                                <li><strong>Adress: </strong>Leça da Palmeira, Portugal</li>
+                                <li><strong>Degree: </strong>Master's in Automation and Systems</li>
+                            </ul>
+                            <ul class="li_no_style">
+                                <li><strong>Current Company: </strong>Advantek</li>
+                                <li><strong>Position: </strong>Automation Engineering</li>
+                                <li><strong>State: </strong>Open to Work</li>
+                                <li><strong>Remote Job: </strong>Super Avaiabel</li>
+                                <li><strong>Freelance: </strong>Avaiabel</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="myimage" >
-                    <img id="hero_image" src="./resources/images/cara.png">
-                </div>
-
-                <div id="mycv">
-                    <img src="./resources/images/arrow_up.png" alt="arrow to my CV" class="adjust_img">
-                </div>
-
-                <div id="list">
-                    <ul class="li_no_style">
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Education</a></li>                 
-                        <li><a href="#">Experience</a></li>               
-                        <li><a href="#">Software Projects</a></li>
-                        <li><a href="#">Automation Projects</a></li>
-                        <li><a href="#">Contact Me</a></li>
-                    </ul>
+                <div>
+                    <h4><span class="background_color">Education</span></h4>
+                    <div id="education_info">
+                        <div>
+                            <img src="./resources/images/codecadamy.png">
+                        </div>
+                        <div>
+                            <img src="./resources/images/feup.png">
+                        </div>
+                        <div>
+                            <img src="./resources/images/pucp.png">
+                        </div>
+                        <div>
+                            <img src="./resources/images/fer.png">
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section id="information">
-                <div id="home">
-                    <div>
-                        <h2>Automation Engineer</h2>
-                    </div>
-                    <div>
-                        <h2>Software Engineer</h2>
-                    </div>
-                    <div>
-                        <h2>Full Stack Engineer</h2>
-                    </div>
-                </div>
-
-                <div id="about">
-                    <h3>About Me</h3>
-                    <p> 
-                        I graduated from the Faculty of Engineering at the University of Porto. 
-                        I have completed the Integrated Master's program in Electrical and Computer 
-                        Engineering. Within the course, I followed the branch of Automation and I 
-                        specialized in Robotics and Systems Automation. <br><br>
-
-                        Throughout my academic journey, I had the opportunity to undertake several 
-                        projects that allowed me to develop my software and hardware skills, which 
-                        are detailed in the projects section of my LinkedIn profile. These experiences 
-                        enriched my technical skills in various programming languages such as C, C++, 
-                        Python, Java, SQL, MATLAB, Grafcet, and Simulink. Additionally, I am also 
-                        familiar with Autodesk Fusion 360 for 3D design and circuit development. <br><br>
-                        
-                        In terms of my extracurricular activities, my journey began as a scout at the 
-                        age of six. There, I developed essential soft skills such as teamwork, 
-                        communication, adaptability, and problem-solving. In addition, working as a 
-                        children's activities coordinator has given me the opportunity to develop my 
-                        leadership and organisational skills, enabling me to adapt to different 
-                        situations.
-                    </p>
-
-                    <div>
-                        <ul>
-                            <li><strong>Birthday: </strong>8 June 1998</li>
-                            <li><strong>Email: </strong>mtenente43@gmail.com</li>
-                            <li><strong>Phone: </strong>+351 910 786 710</li>
-                            <li><strong>Adress: </strong>Leça da Palmeira, Portugal</li>
-                            <li><strong>Degree: </strong>Master's in Automation and Systems</li>
-                        </ul>
-                        <ul>
-                            <li><strong>Current Company: </strong>Advantek</li>
-                            <li><strong>Position: </strong>Automation Engineering</li>
-                            <li><strong>State: </strong>Open to Work</li>
-                            <li><strong>Remote Job: </strong>Super Avaiabel</li>
-                            <li><strong>Freelance: </strong>Avaiabel</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div id="education" class="info-container">
+            <section class="info-container slide">
+                <h3 class="slide_title"><span class="background_color"> About Me </span></h3>
+                <div>
                     <div class="container">
                         <div class="front-information">
                             <div class="titles">
@@ -204,177 +205,185 @@
                         </div> 
                     </div>
                 </div>
+            </section>
 
-                <div id="experience" class="info-container">
-                    <div class="container">
-                        <div class="front-information">
-                            <div class="titles">
-                                <h3>Automation Engineer</h3>
-                                <h4>April 2024 - Present</h4>
-                                <h4>Magdburg, Germany</h4>
-                            </div>
-                            <div>
-                                <img class="adjust_img" style="border-radius: 10px;" src="resources/images/advantek.png">
-                            </div>
+            <section id="experience" class="info-container slide">
+                <h3 class="slide_title"><span class="background_color"> Experience </span></h3>
+                <div class="container">
+                    <div class="front-information">
+                        <div class="titles">
+                            <h3>Automation Engineer</h3>
+                            <h4>April 2024 - Present</h4>
+                            <h4>Magdburg, Germany</h4>
                         </div>
-                        <div class="side-information">
-                            <div class="description">
-                                <p> I worked on the support and commissioning of an automated palletizing cell (RawPaq), 
-                                    consisting of three collaborative robots with distinct functions: product rotation, 
-                                    palletizing, and placement of cardboard sheets between product layers. The system also 
-                                    included conveyors, elevators, and automatic pallet wrapping equipment.
-                                    <br><br>
-                                    Key responsibilities:<br>
-                                    -Technical support to ensure high system availability and performance;<br>
-                                    -Functional testing and validation, ensuring compliance with specified requirements;<br>
-                                    -Commissioning, calibration, and optimization of the system, including adjustment of 
-                                    parameters and operation sequences;<br>
-                                    -Troubleshooting and fault diagnosis, both in mechanical components and automation logic;<br>
-                                    -Collaboration with multidisciplinary teams, including operators, programmers, engineers, 
-                                    and local technicians;<br>
-                                    -Technical documentation, with detailed records of interventions, diagnostics, and applied solutions.
-                                    <br><br>
-                                    Technologies and key competencies:<br>
-                                    -Extensive use of TwinCAT 3 for system analysis and intervention;<br>
-                                    -Interpretation and understanding of structured code, controlling the entire RawPaq cell;<br>
-                                    -Error detection and correction in software, eliminating system blockages and restoring operation;<br>
-                                    -Variable manipulation and forcing within the system to bypass faults and ensure continuous operation.</p>
-                            </div>
-                            <div class="skills">
-                                <ul>
-                                    <li>PLC Programming</li>
-                                    <li>Beckhoff TwinCAT</li>
-                                    <li>Industrial Automation</li>
-                                    <li>Structured Text</li>
-                                    <li>Function Block</li>
-                                    <li>English</li>
-                                    <li>Problem Solving</li>
-                                </ul>
-                            </div>
-                        </div> 
-                    </div>
-
-                    <div class="container">
-                        <div class="front-information">
-                            <div class="titles">
-                                <h3>Eletrical & Automation Engineer</h3>
-                                <h4>January 2024 - April 2024</h4>
-                                <h4>Porto, Portugal</h4>
-                            </div>
-                            <div>
-                                <img class="adjust_img" style="border-radius: 10px;" src="resources/images/e-redes.png">
-                            </div>
+                        <div>
+                            <img class="adjust_img" style="border-radius: 10px;" src="resources/images/advantek.png">
                         </div>
-                        <div class="side-information">
-                            <div class="description">
-                                <p>I was responsible for the design of connections to the public low-voltage network, ensuring efficient
-                                     and safe solutions for the distribution of energy. I was also responsible for the preparation of 
-                                     detailed budgets for these projects, ensuring accuracy and financial feasibility.
-                                    <br><br>
-                                    At the same time, I developed automation programs to optimise repetitive tasks, increase productivity 
-                                    and reduce operational errors. These projects were later applied all over the country.</p>
-                            </div>
-                            <div class="skills">
-                                <ul>
-                                    <li>Low-Voltage Design</li>
-                                    <li>Electrical Engineering</li>
-                                    <li>Python</li>
-                                    <li>C (Programming Language)</li>
-                                    <li>AutoHotKey</li>
-                                </ul>
-                            </div>
-                        </div> 
                     </div>
-                    
+                    <div class="side-information">
+                        <div class="description">
+                            <p> I worked on the support and commissioning of an automated palletizing cell (RawPaq), 
+                                consisting of three collaborative robots with distinct functions: product rotation, 
+                                palletizing, and placement of cardboard sheets between product layers. The system also 
+                                included conveyors, elevators, and automatic pallet wrapping equipment.
+                                <br><br>
+                                Key responsibilities:<br>
+                                -Technical support to ensure high system availability and performance;<br>
+                                -Functional testing and validation, ensuring compliance with specified requirements;<br>
+                                -Commissioning, calibration, and optimization of the system, including adjustment of 
+                                parameters and operation sequences;<br>
+                                -Troubleshooting and fault diagnosis, both in mechanical components and automation logic;<br>
+                                -Collaboration with multidisciplinary teams, including operators, programmers, engineers, 
+                                and local technicians;<br>
+                                -Technical documentation, with detailed records of interventions, diagnostics, and applied solutions.
+                                <br><br>
+                                Technologies and key competencies:<br>
+                                -Extensive use of TwinCAT 3 for system analysis and intervention;<br>
+                                -Interpretation and understanding of structured code, controlling the entire RawPaq cell;<br>
+                                -Error detection and correction in software, eliminating system blockages and restoring operation;<br>
+                                -Variable manipulation and forcing within the system to bypass faults and ensure continuous operation.</p>
+                        </div>
+                        <div class="skills">
+                            <ul>
+                                <li>PLC Programming</li>
+                                <li>Beckhoff TwinCAT</li>
+                                <li>Industrial Automation</li>
+                                <li>Structured Text</li>
+                                <li>Function Block</li>
+                                <li>English</li>
+                                <li>Problem Solving</li>
+                            </ul>
+                        </div>
+                    </div> 
                 </div>
 
-                <div id="software_projects">
-                    <div class="container">
-                        <div class="front-information">
-                            <div class="titles">
-                                <h3>My Portfolio</h3>
-                                <h4>June 2025 - Present</h4>
-                                <h4>Online</h4>
-                            </div>
-                            <div>
-                                <img class="adjust_img" style="border-radius: 10px;" src="resources/images/porfolio.png">
-                            </div>
+                <div class="container">
+                    <div class="front-information">
+                        <div class="titles">
+                            <h3>Eletrical & Automation Engineer</h3>
+                            <h4>January 2024 - April 2024</h4>
+                            <h4>Porto, Portugal</h4>
                         </div>
-                        <div class="side-information">
-                            <div class="description">
-                                <p>I am currently developing my personal portfolio website, designed to showcase both my completed and ongoing projects. This is my first software project, created to combine my technical background with my creative work as a Full-Stack developer and engineer. The portfolio serves as a space to present my academic path, technical experience, and continuous growth as a developer.</p>
-                            </div>
-                            <div class="skills">
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>Git</li>
-                                    <li>Front End</li>
-                                </ul>
-                            </div>
+                        <div>
+                            <img class="adjust_img" style="border-radius: 10px;" src="resources/images/e-redes.png">
                         </div>
                     </div>
+                    <div class="side-information">
+                        <div class="description">
+                            <p>I was responsible for the design of connections to the public low-voltage network, ensuring efficient
+                                    and safe solutions for the distribution of energy. I was also responsible for the preparation of 
+                                    detailed budgets for these projects, ensuring accuracy and financial feasibility.
+                                <br><br>
+                                At the same time, I developed automation programs to optimise repetitive tasks, increase productivity 
+                                and reduce operational errors. These projects were later applied all over the country.</p>
+                        </div>
+                        <div class="skills">
+                            <ul>
+                                <li>Low-Voltage Design</li>
+                                <li>Electrical Engineering</li>
+                                <li>Python</li>
+                                <li>C (Programming Language)</li>
+                                <li>AutoHotKey</li>
+                            </ul>
+                        </div>
+                    </div> 
                 </div>
+                
+            </section>
 
-                <div id="automation_projects">
-                    <div class="container">
-                        <div class="front-information">
-                            <div class="titles">
-                                <h3>Automatic Spinning Lathe</h3>
-                                <h4>September 2025 - Present</h4>
-                                <h4>Freelance, Portugal</h4>
-                            </div>
-                            <div>
-                                <img class="adjust_img" style="border-radius: 10px;" src="resources/images/porfolio.png">
-                            </div>
+            <section id="projects" class="info-container slide">
+                <h3 class="slide_title"><span class="background_color"> Projects </span></h3>
+                <div class="container">
+                    <div class="front-information">
+                        <div class="titles">
+                            <h3>My Portfolio</h3>
+                            <h4>June 2025 - Present</h4>
+                            <h4>Online</h4>
                         </div>
-                        <div class="side-information">
-                            <div class="description">
-                                <p>I am currently working as a freelancer, programming two automatic spinning lathe (CNC) machines used to shape metal into products such as cake molds, pans, and skillets. This project allows me to combine my background in automation and robotics with practical, hands-on experience in industrial manufacturing, while improving my understanding of G-code programming and machine control systems.</p>
-                            </div>
-                            <div class="skills">
-                                <ul>
-                                    <li>G Code</li>
-                                    <li>Automation</li>
-                                    <li>Hardware Developing</li>
-                                    <li>Engineering</li>
-                                </ul>
-                            </div>
+                        <div>
+                            <img class="adjust_img" style="border-radius: 10px;" src="resources/images/porfolio.png">
                         </div>
                     </div>
-
-                    <div class="container">
-                        <div class="front-information">
-                            <div class="titles">
-                                <h3>Automatic Watering</h3>
-                                <h4>May 2024 - June 2025</h4>
-                                <h4>Leça da Palmeira, Portugal</h4>
-                            </div>
-                            <div>
-                                <img class="adjust_img" style="border-radius: 10px;" src="resources/images/porfolio.png">
-                            </div>
+                    <div class="side-information">
+                        <div class="description">
+                            <p>I am currently developing my personal portfolio website, designed to showcase both my completed and ongoing projects. This is my first software project, created to combine my technical background with my creative work as a Full-Stack developer and engineer. The portfolio serves as a space to present my academic path, technical experience, and continuous growth as a developer.</p>
                         </div>
-                        <div class="side-information">
-                            <div class="description">
-                                <p> I designed and built a fully automated irrigation system, developing both the hardware and software from scratch. This project reflects my ability to integrate electronics, programming, and system design to create efficient and practical solutions. It strengthened my skills in embedded systems, sensor integration, and automation control.</p>
-                            </div>
-                            <div class="skills">
-                                <ul>
-                                    <li>Hardware Developing</li>
-                                    <li>Arduino</li>
-                                    <li>C++</li>
-                                </ul>
-                            </div>
+                        <div class="skills">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Git</li>
+                                <li>Front End</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <div id="contact">
+                <div class="container">
+                    <div class="front-information">
+                        <div class="titles">
+                            <h3>Automatic Spinning Lathe</h3>
+                            <h4>September 2025 - Present</h4>
+                            <h4>Freelance, Portugal</h4>
+                        </div>
+                        <div>
+                            <img class="adjust_img" style="border-radius: 10px;" src="resources/images/porfolio.png">
+                        </div>
+                    </div>
+                    <div class="side-information">
+                        <div class="description">
+                            <p>I am currently working as a freelancer, programming two automatic spinning lathe (CNC) machines used to shape metal into products such as cake molds, pans, and skillets. This project allows me to combine my background in automation and robotics with practical, hands-on experience in industrial manufacturing, while improving my understanding of G-code programming and machine control systems.</p>
+                        </div>
+                        <div class="skills">
+                            <ul>
+                                <li>G Code</li>
+                                <li>Automation</li>
+                                <li>Hardware Developing</li>
+                                <li>Engineering</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="container">
+                    <div class="front-information">
+                        <div class="titles">
+                            <h3>Automatic Watering</h3>
+                            <h4>May 2024 - June 2024</h4>
+                            <h4>Leça da Palmeira, Portugal</h4>
+                        </div>
+                        <div>
+                            <img class="adjust_img" style="border-radius: 10px;" src="resources/images/porfolio.png">
+                        </div>
+                    </div>
+                    <div class="side-information">
+                        <div class="description">
+                            <p> I designed and built a fully automated irrigation system, developing both the hardware and software from scratch. This project reflects my ability to integrate electronics, programming, and system design to create efficient and practical solutions. It strengthened my skills in embedded systems, sensor integration, and automation control.</p>
+                        </div>
+                        <div class="skills">
+                            <ul>
+                                <li>Hardware Developing</li>
+                                <li>Arduino</li>
+                                <li>C++</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
+
+            <section id="contact" class="slide">
+                <h3 class="slide_title"><span class="background_color"> Contact Me </span></h3>
+            </section>
         </main>
+
+        <footer>
+            <div>
+                <a href="./resources/documents/CV_Miguel Tenente.pdf" target="_blank"><i class="fa-solid fa-file"></i></a>
+                <a href="https://www.linkedin.com/in/miguel-tenente-a485571ba/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/miguelTenente" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </footer>
 
         <script src="./index.js" defer>
         </script>

@@ -2,8 +2,6 @@ LISTA DAS COISAS QUE FALTAM:
 
 -Embelesar a pagina de entrada;
 -Adicionar as diferentes imagens do hero e fazer troca-las;
--Adicionar  informação á Educação e á Experiencia;
--Colocar projetos (mesmo estilo que Education e Experience);
 -Fazer as caixinhas do contact me;
 -Adicionar algum icon;
 -Pedir ajuda á Valeira para saber o que dá para melhorar no disign das coisas;
