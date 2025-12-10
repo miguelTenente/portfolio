@@ -7,21 +7,24 @@
         <title>MTenente</title>
         <link rel="stylesheet" href="./resources/css/index.css">
         <script src="https://kit.fontawesome.com/dd8cd0352a.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
     </head>
 
-    <body class="background_color">
+    <body class="background_color ff_gothic">
         <header>
             <div>
-                <a href="#hero" class="icons">home</a>
+                <a href="#hero" class="icons ff_gothic header_style">home</a>
             </div>
             <div>
-                <button id="menu_button" class="icons"><i class="fa-solid fa-list"></i></button>
+                <a style="font-size: 3rem;" id="menu_button" class="icons header_style"><i class="fa-solid fa-bars"></i></a>
                 <nav id="menu">
-                    <ul class="li_no_style">
-                        <li><a href="#about">About Me</a></li>                 
-                        <li><a href="#experience">Experience</a></li>               
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
+                    <ul class="li_no_style ff_gothic">
+                        <li><a href="#about" class="header_style">About Me</a></li>                 
+                        <li><a href="#experience" class="header_style">Experience</a></li>               
+                        <li><a href="#projects" class="header_style">Projects</a></li>
+                        <li><a href="#contact" class="header_style">Contact Me</a></li>
                     </ul>
                 </nav>
             </div>
@@ -29,12 +32,17 @@
 
         <main>
             <section id="hero" class="slide">
-                <h1>Miguel Tenente</h1>
-                <h2>Software Engineer & Automation Engineer</h2>
-                <h3>I am passionate about creating automation and software solutions that make everyday life easier.</h3>
+                <div>
+                    <h2 class="ff_bitcount">Hi, my name is</h2>
+                    <h1 class="ff_gothic">Miguel Tenente</h1>
+                    <h2 class="ff_bitcount">Software Engineer & Automation Engineer</h2>
+                </div>
+                <div>
+                    <h3 class="ff_gothic">I am passionate about creating automation and software solutions <br> that make everyday life easier.</h3>
+                </div>
             </section>
 
-            <section id="about" class="slide">
+            <section id="about" class="slide ff_gothic">
                 <h3 class="slide_title"><span class="background_color"> About Me </span></h3>
 
                 <div id="about_info">

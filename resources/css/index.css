@@ -2,13 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'GrandSlang Roman', 'GrandSlang Roman Placeholder', sans-serif;
 }
 
 
-/*General*/
+/*GENERAL*/
 .background_color {
-    background-color: #ebebf0;
+    background-color: #0f1837;
 }
 
 .adjust_img {
@@ -19,6 +18,33 @@
 .li_no_style {
     list-style: none;
     padding: 0;
+}
+
+/*Fonts Famalys*/
+.ff_gothic {
+    font-family: "Science Gothic", sans-serif;
+    color: white;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100,
+        "CTRS" 0;
+}
+.ff_bitcount {
+    padding: 1rem;
+    color: #1e9201;
+    font-family: "Bitcount Grid Double", system-ui;
+    font-size: 3rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0;
 }
 
 
@@ -33,6 +59,16 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.header_style {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: underline;
+}
+.header_style:hover {
+    text-decoration: none;
+}
+
 
 #menu {
     position: fixed;
@@ -40,7 +76,6 @@ header {
     right: 3rem;
     padding: 3rem;
     display: none;
-    background-color: black;
 }
 
 
@@ -56,32 +91,32 @@ main {
 .slide {
     width: 100%;
     min-height: 100vh;
-    padding: 6rem 5rem 4rem 5rem;
-    padding-top: 6rem;
-    padding-bottom: 4rem;
+    padding: 6rem 10rem 4rem 10rem;
     scroll-snap-align: start;
+    color: white;
 }
 
 .slide_title {
     font-size: 2rem;
     position: relative;
     text-align: center;
+    color: orange;
 }
 .slide_title::before {
     content: "";
     height: 0.2rem;
     width: 50vw;
-    background-color: black;
+    background-color: orange;
     position: absolute;
     top: 50%;
     right: 0;
     z-index:-2;
 }
-.slide_title::after {
+.slide_title::after, #about h4::after{
     content: "";
     height: 0.2rem;
     width: 50vw;
-    background-color: black;
+    background-color: orange;
     position: absolute;
     top: 50%;
     left: 0;
@@ -94,7 +129,21 @@ span {
 
 
 /*Hero Section*/
-
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+}
+#hero h1 {
+    font-size: 8rem;
+    padding: 2rem;
+    font-weight: bolder;
+}
+#hero h3 {
+    padding-bottom: 6rem;
+    font-size: 1.5rem;
+}
 
 
 /*About Section*/
@@ -105,19 +154,11 @@ span {
     gap: 2rem;
 }
 #about h4 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     position: relative;
+    color: orange;
 }
-#about h4::after {
-    content: "";
-    height: 0.2rem;
-    width: 50vw;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index:-2;
-}
+
 
 
 /*Education Div*/
